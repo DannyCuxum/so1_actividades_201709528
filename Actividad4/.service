@@ -1,0 +1,9 @@
+[Unit]
+Description=Saludo diario
+After=network-online.target
+
+[Service]
+ExecStart=/usr/local/bin/saludo.sh
+
+[Install]
+WantedBy=multi-user.target
